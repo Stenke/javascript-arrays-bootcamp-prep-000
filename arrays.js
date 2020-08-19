@@ -5,16 +5,16 @@ function addElementToBeginningOfArray(array, element) {
  arrayNew = [element, ...array]
  return arrayNew
 }
-function destructivelyAddElementToBeginningOfArray(array1, element1) {
-  array1 = [1];
-  element1 = "foo";
-  array1.unshift(element1);
-  return array1
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array = [1];
+  element = "foo";
+  array.unshift(element);
+  return array
 }
 function addElementToEndOfArray(array2, element2) {
  array2 = [1];
  element2 = 'foo';
- arrayNew2 = [array2,... element2]
+ arrayNew2 = [...array, element]
  return arrayNew2
 }
 function destructivelyAddElementToEndOfArray(array3, element3) {
